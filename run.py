@@ -22,6 +22,7 @@ if __name__ == "__main__":
                 parser = Parser(sys.argv[2])
                 result = parser.prepare_output(parser.read_file())
                 writer = Writer(result)
+                writer.record()
             except IndexError:
                 print('Expected file name')
         else:

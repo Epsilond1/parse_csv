@@ -29,5 +29,6 @@ class Parser(object):
                     result.append([all_element[it], all_element[it].name, all_element[it].name])
             else:
                 result.append([all_element[it], all_element[it].name, all_element[it].name])
-        for element in result:
-            print('{0} - {1}: {2}, count: {3}, info: {4}'.format(element[1], element[2], element[0].name, element[0].count, element[0].character))
+        return result
+        # for element in result:
+        #     print('{0} - {1}: count: {2}, info: {3}'.format(element[1], element[2], element[0].count, element[0].character))
